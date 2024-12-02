@@ -23,31 +23,31 @@ public class PhysicsUI : MonoBehaviour
 
     public void CalsulateVelocityBody()
     {
-        float resolution = PhysicsCalculations.CalculateWeight(float.Parse(OneInput.text), float.Parse(TwoInput.text));
+        float resolution = PhysicsCalculations.CalsulateVelocityBody(float.Parse(OneInput.text), float.Parse(TwoInput.text));
         resultText.text = $"Результат:" + resolution;
     }
 
     public void CalsulatePowerPulse()
     {
-        float resolution = PhysicsCalculations.CalculateWeight(float.Parse(OneInput.text), float.Parse(TwoInput.text));
+        float resolution = PhysicsCalculations.CalsulatePowerPulseFormula(float.Parse(OneInput.text), float.Parse(TwoInput.text));
         resultText.text = $"Результат:" + resolution;
     }
 
     public void CalculatePower()
     {
-        float resolution = PhysicsCalculations.CalculateWeight(float.Parse(OneInput.text), float.Parse(TwoInput.text));
+        float resolution = PhysicsCalculations.CalculatePowerFormula(float.Parse(OneInput.text), float.Parse(TwoInput.text));
         resultText.text = $"Результат:" + resolution;
     }
 
     public void CalculateGravityForce()
     {
-        float resolution = PhysicsCalculations.CalculateWeight(float.Parse(OneInput.text), float.Parse(TwoInput.text));
+        float resolution = PhysicsCalculations.CalculateGravityForce(float.Parse(OneInput.text), float.Parse(TwoInput.text));
         resultText.text = $"Результат:" + resolution;
     }
 
     public void CalculateMassNumber()
     {
-        float resolution = PhysicsCalculations.CalculateWeight(float.Parse(OneInput.text), float.Parse(TwoInput.text));
+        float resolution = PhysicsCalculations.CalculateMassNumber(float.Parse(OneInput.text), float.Parse(TwoInput.text));
         resultText.text = $"Результат:" + resolution;
     }
 }
